@@ -1,7 +1,6 @@
-Feature: as a User, I should receive email with attached pdf document 
-	after submitting the form 
-				
-@Test112 
+Feature: as a User, after submitting the form, I should receive email with 
+
+@Test117 
 Scenario: Test Loan Application confirmation email attachment 
 
 	Given I am on the home page of CT-Loan 
@@ -52,7 +51,7 @@ Scenario: Test Loan Application confirmation email attachment
 	And I add usearname "markjonesctl@gmail.com" and click next button 
 	And I add password "cybertek" and click next button 
 	Then I open email from CT Loan from inbox folder 
-	Then I check if an email recieved with an attachment named "CTLoanDev.pdf"
+	Then Loan application ID in the email should be the same as system showed after submitting the form 
 	
 	
 	
