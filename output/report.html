@@ -32,6 +32,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
 		</ul>
@@ -46,11 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-<<<<<<< HEAD
-                    <span class='label suite-start-time blue darken-3'>Dec 22, 2017 03:37:01 PM</span>
-=======
-                    <span class='label suite-start-time blue darken-3'>Dec 22, 2017 06:06:35 PM</span>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
+                    <span class='label suite-start-time blue darken-3'>Dec 23, 2017 03:32:42 PM</span>
 				</a>
 			</li>
 			<li>
@@ -76,6 +73,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -136,10 +134,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -151,10 +149,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -166,10 +164,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>47</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='97.872%'><span class='strong'>46</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.128%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -183,28 +181,18 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-<<<<<<< HEAD
-						<span class='test-name'>as a User, I should receive email with attached pdf document</span>
-						<span class='test-time'>Dec 22, 2017 03:37:01 PM</span>
-						<span class='test-status right pass'>pass</span>
-=======
 						<span class='test-name'>as a User, after submitting the form, I should receive email with</span>
-						<span class='test-time'>Dec 22, 2017 06:06:35 PM</span>
+						<span class='test-time'>Dec 23, 2017 03:32:42 PM</span>
 						<span class='test-status right fail'>fail</span>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Test117</span>
 	</div>
-<<<<<<< HEAD
-	<span class='duration right label'>0h 0m 24s+138ms</span>
-=======
-	<span class='duration right label'>0h 0m 26s+157ms</span>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
+	<span class='duration right label'>0h 0m 21s+390ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Test Loan Application confirmation email attachment</span>
@@ -575,26 +563,30 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then I open email from CT Loan from inbox folder</span>
-<<<<<<< HEAD
 				<div class='pre'>passed</div>
-=======
-				<div class='pre'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='yDmH0d']/div[2]/c-wiz/div/div/div[5]/div[2]/c-wiz/div/div[1]/div/div[1]/div[2]/a[2]' (tried for 10 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.ct.stepDefinitions.CTL112_LoanApplicationConfirmationEmailAttachment.i_open_email_from_CT_Loan_from_inbox_folder(CTL112_LoanApplicationConfirmationEmailAttachment.java:45)
-	at ✽.Then I open email from CT Loan from inbox folder(CTL_117_Loan_Application_confirmation_email.feature:53)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='yDmH0d']/div[2]/c-wiz/div/div/div[5]/div[2]/c-wiz/div/div[1]/div/div[1]/div[2]/a[2]"}
-  (Session info: chrome=63.0.3239.108)
+			
+		</li>
+		<li test-id='49' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Loan application ID in the email should be the same as system showed after submitting the form</span>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="/Users/meerimkanatbek/git/ct-loan/output/screenshot1514061185445.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table//table//tr[31]//td[3]"}
+  (Session info: chrome=63.0.3239.84)
   (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'Bogdans-MBP.localdomain', ip: 'fe80:0:0:0:18e8:e156:7a6d:c639%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_121'
+System info: host: 'Meerims-MBP.hsd1.md.comcast.net', ip: 'fe80:0:0:0:1c97:aa89:69ac:7c2e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522932 (4140ab217e1ca1..., userDataDir: /var/folders/5r/h4bsx0fn2q9...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}
-Session ID: 8addf0f5a5428543d91d7110a054b370
-*** Element info: {Using=xpath, value=//*[@id='yDmH0d']/div[2]/c-wiz/div/div/div[5]/div[2]/c-wiz/div/div[1]/div/div[1]/div[2]/a[2]}
-	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522932 (4140ab217e1ca1..., userDataDir: /var/folders/ff/8q23w8tx63x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.84, webStorageEnabled: true}
+Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
+*** Element info: {Using=xpath, value=//table//table//tr[31]//td[3]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
@@ -611,71 +603,10 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.ct.stepDefinitions.CTL112_LoanApplicationConfirmationEmailAttachment.i_open_email_from_CT_Loan_from_inbox_folder(CTL112_LoanApplicationConfirmationEmailAttachment.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at com.ct.stepDefinitions.CTL117_confirmationEmailWith_ID.loan_application_ID_in_the_email_should_be_the_same_as_system_showed_after_submitting_the_form(CTL117_confirmationEmailWith_ID.java:18)
+	at ✽.Then Loan application ID in the email should be the same as system showed after submitting the form(CTL_117_Loan_Application_confirmation_email.feature:54)
 </pre></div>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
-			
-		</li>
-		<li test-id='49' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Loan application ID in the email should be the same as system showed after submitting the form</span>
-			<ul class='screenshots right'>
-<<<<<<< HEAD
-				<li><a data-featherlight="image" href="/Users/meerimkanatbek/git/ct-loan/output/screenshot1513975047263.png"><i class='material-icons'>panorama</i></a></li>
-=======
-				<li><a data-featherlight="image" href="/Users/bogdanlutsenko/git/ct-loan/output/screenshot1513984023824.png"><i class='material-icons'>panorama</i></a></li>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
-			</ul>
-				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -736,13 +667,13 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 					<div class='category-heading'>
 						<span class='category-name'>@Test117</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -757,15 +688,9 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 								</thead>
 								<tbody>
 									<tr>
-<<<<<<< HEAD
-										<td>Dec 22, 2017 03:37:01 PM</td>
-										<td class='linked' test-id='2'>as a User, I should receive email with attached pdf document.Test Loan Application confirmation email attachment</td>
-										<td><span class='test-status pass'>pass</span></td>
-=======
-										<td>Dec 22, 2017 06:06:35 PM</td>
+										<td>Dec 23, 2017 03:32:42 PM</td>
 										<td class='linked' test-id='2'>as a User, after submitting the form, I should receive email with.Test Loan Application confirmation email attachment</td>
 										<td><span class='test-status fail'>fail</span></td>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 									</tr>
 								</tbody>
 							</table>
@@ -784,8 +709,6 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 	</div>
 </div>
 <!-- category view -->
-<<<<<<< HEAD
-=======
 <div id='exception-view' class='view hide'>
 
     <section id='controls'>
@@ -813,7 +736,7 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -828,25 +751,21 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Dec 22, 2017 06:06:51 PM</td>
-                                                        <td class='linked' test-id='48'>as a User, after submitting the form, I should receive email with.Test Loan Application confirmation email attachment.Then I open email from CT Loan from inbox folder</td>
-                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='yDmH0d']/div[2]/c-wiz/div/div/div[5]/div[2]/c-wiz/div/div[1]/div/div[1]/div[2]/a[2]' (tried for 10 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.ct.stepDefinitions.CTL112_LoanApplicationConfirmationEmailAttachment.i_open_email_from_CT_Loan_from_inbox_folder(CTL112_LoanApplicationConfirmationEmailAttachment.java:45)
-	at ✽.Then I open email from CT Loan from inbox folder(CTL_117_Loan_Application_confirmation_email.feature:53)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='yDmH0d']/div[2]/c-wiz/div/div/div[5]/div[2]/c-wiz/div/div[1]/div/div[1]/div[2]/a[2]"}
-  (Session info: chrome=63.0.3239.108)
+                                                        <td>Dec 23, 2017 03:33:03 PM</td>
+                                                        <td class='linked' test-id='49'>as a User, after submitting the form, I should receive email with.Test Loan Application confirmation email attachment.Then Loan application ID in the email should be the same as system showed after submitting the form</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table//table//tr[31]//td[3]"}
+  (Session info: chrome=63.0.3239.84)
   (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'Bogdans-MBP.localdomain', ip: 'fe80:0:0:0:18e8:e156:7a6d:c639%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_121'
+System info: host: 'Meerims-MBP.hsd1.md.comcast.net', ip: 'fe80:0:0:0:1c97:aa89:69ac:7c2e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522932 (4140ab217e1ca1..., userDataDir: /var/folders/5r/h4bsx0fn2q9...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}
-Session ID: 8addf0f5a5428543d91d7110a054b370
-*** Element info: {Using=xpath, value=//*[@id='yDmH0d']/div[2]/c-wiz/div/div/div[5]/div[2]/c-wiz/div/div[1]/div/div[1]/div[2]/a[2]}
-	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522932 (4140ab217e1ca1..., userDataDir: /var/folders/ff/8q23w8tx63x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.84, webStorageEnabled: true}
+Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
+*** Element info: {Using=xpath, value=//table//table//tr[31]//td[3]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
@@ -863,54 +782,9 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.ct.stepDefinitions.CTL112_LoanApplicationConfirmationEmailAttachment.i_open_email_from_CT_Loan_from_inbox_folder(CTL112_LoanApplicationConfirmationEmailAttachment.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at com.ct.stepDefinitions.CTL117_confirmationEmailWith_ID.loan_application_ID_in_the_email_should_be_the_same_as_system_showed_after_submitting_the_form(CTL117_confirmationEmailWith_ID.java:18)
+	at ✽.Then Loan application ID in the email should be the same as system showed after submitting the form(CTL_117_Loan_Application_confirmation_email.feature:54)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -928,7 +802,6 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
         </div>
     </div>
 </div>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -956,31 +829,19 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-<<<<<<< HEAD
-					<div class='panel-lead'>Dec 22, 2017 03:37:01 PM</div>
-=======
-					<div class='panel-lead'>Dec 22, 2017 06:06:35 PM</div>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
+					<div class='panel-lead'>Dec 23, 2017 03:32:42 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-<<<<<<< HEAD
-			 		<div class='panel-lead'>Dec 22, 2017 03:37:27 PM</div>
-=======
-			 		<div class='panel-lead'>Dec 22, 2017 06:07:04 PM</div>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
+			 		<div class='panel-lead'>Dec 23, 2017 03:33:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-<<<<<<< HEAD
-					<div class='panel-lead'>26,070ms</div>
-=======
-					<div class='panel-lead'>28,542ms</div>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
+					<div class='panel-lead'>24,088ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1015,14 +876,9 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 							<th>Others</th>
 						</tr>
 						<tr>
-<<<<<<< HEAD
-							<td>@Test112</td>
-=======
 							<td>@Test117</td>
 							<td>0</td>
->>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 							<td>1</td>
-							<td>0</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -1047,31 +903,31 @@ Session ID: 8addf0f5a5428543d91d7110a054b370
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 47,
-				failGrandChild: 0,
+				passGrandChild: 46,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		
