@@ -47,7 +47,11 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
+<<<<<<< HEAD
                     <span class='label suite-start-time blue darken-3'>Dec 23, 2017 03:32:42 PM</span>
+=======
+                    <span class='label suite-start-time blue darken-3'>Dec 23, 2017 01:40:06 AM</span>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				</a>
 			</li>
 			<li>
@@ -86,7 +90,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Test117</a></li>
+					<li><a href='#'>@Test128</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -164,10 +168,18 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
+<<<<<<< HEAD
 					<span class='tooltipped' data-position='top' data-tooltip='97.872%'><span class='strong'>46</span> step(s) passed</span>
+=======
+					<span class='tooltipped' data-position='top' data-tooltip='81.818%'><span class='strong'>9</span> step(s) passed</span>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				</div>
 				<div class='block text-small'>
+<<<<<<< HEAD
 					<span class='strong tooltipped' data-position='top' data-tooltip='2.128%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+=======
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> others
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				</div>
 			</div>
 		</div>
@@ -183,28 +195,41 @@
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
+<<<<<<< HEAD
 						<span class='test-name'>as a User, after submitting the form, I should receive email with</span>
 						<span class='test-time'>Dec 23, 2017 03:32:42 PM</span>
+=======
+						<span class='test-name'>Verify personal information</span>
+						<span class='test-time'>Dec 23, 2017 01:40:06 AM</span>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
+<<<<<<< HEAD
 <div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Test117</span>
 	</div>
 	<span class='duration right label'>0h 0m 21s+390ms</span>
+=======
+<div class='scenariooutline node' test-id='2' status='fail'>
+	<span class='duration right label'>0h 0m 8s+437ms</span>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Test Loan Application confirmation email attachment</span>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">verify the data on person table</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Test128</span>
+			</div>
 			
-			<b>Given</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Given I am on the home page of CT-Loan</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">verify the data on person table</span>
 			
+<<<<<<< HEAD
 		</li>
 		<li test-id='4' class='node then pass' status='pass'>
 			
@@ -608,6 +633,62 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 	at ✽.Then Loan application ID in the email should be the same as system showed after submitting the form(CTL_117_Loan_Application_confirmation_email.feature:54)
 </pre></div>
 			
+=======
+				<ul class='steps'>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I connect to the data table</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When personal table should contain  "SSN_NR" "FIRST_NAME" "LAST_NAME" "MIDDLE_INIT" "GENDER" and "DATE_OF_BIRTH"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And personal table should has user's  "234346980" ssn number</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='7' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And personal table should has user's "Mark" first name</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='8' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And personal table should has user's "Jones" last name</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And personal table should has user's "Sam" middle init</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And personal table should has user's "M" gender</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='11' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then personal table should has user's "10/18/1984" date of birth</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And gender should be indicated by M and F characters</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And DOB table must have the date in "dd-MM-yyyy" format</span>
+							<div class='pre'><textarea>org.junit.ComparisonFailure: expected:<2[3-05-0018]> but was:<2[000-12-12 00:00:00]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.ct.stepDefinitions.CTL128_personalInfoDataBaseVirification.dob_table_must_have_the_date_in_format(CTL128_personalInfoDataBaseVirification.java:122)
+	at ✽.And DOB table must have the date in "dd-MM-yyyy" format(CTL-128_personalInfo_database_verification.feature:13)
+</textarea></div>
+					</li>
+					<li test-id='14' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When the user does not enter middle name, the field value should be blank</span>
+						<ul class='screenshots right'>
+							<li><a data-featherlight="image" href="/Users/bogdanlutsenko/git/ct-loan/output/screenshot1514011218056.png"><i class='material-icons'>panorama</i></a></li>
+						</ul>
+							<div class='pre'>skipped</div>
+					</li>
+				</ul>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 		</li>
 	</ul>
 </div>
@@ -665,7 +746,7 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Test117</span>
+						<span class='category-name'>@Test128</span>
 						<span class='category-status right'>
 							<span class='label fail'>1</span>
 						</span>
@@ -688,8 +769,13 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 								</thead>
 								<tbody>
 									<tr>
+<<<<<<< HEAD
 										<td>Dec 23, 2017 03:32:42 PM</td>
 										<td class='linked' test-id='2'>as a User, after submitting the form, I should receive email with.Test Loan Application confirmation email attachment</td>
+=======
+										<td>Dec 23, 2017 01:40:06 AM</td>
+										<td class='linked' test-id='3'>Verify personal information.verify the data on person table.verify the data on person table</td>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -736,7 +822,11 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
+<<<<<<< HEAD
                                 <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+=======
+                                <span class='exception-name'>org.junit.ComparisonFailure</span>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -751,6 +841,7 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
                                         </thead>
                                         <tbody>
                                                     <tr>
+<<<<<<< HEAD
                                                         <td>Dec 23, 2017 03:33:03 PM</td>
                                                         <td class='linked' test-id='49'>as a User, after submitting the form, I should receive email with.Test Loan Application confirmation email attachment.Then Loan application ID in the email should be the same as system showed after submitting the form</td>
                                                         <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table//table//tr[31]//td[3]"}
@@ -786,6 +877,16 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 	at com.ct.stepDefinitions.CTL117_confirmationEmailWith_ID.loan_application_ID_in_the_email_should_be_the_same_as_system_showed_after_submitting_the_form(CTL117_confirmationEmailWith_ID.java:18)
 	at ✽.Then Loan application ID in the email should be the same as system showed after submitting the form(CTL_117_Loan_Application_confirmation_email.feature:54)
 </pre></pre></td>
+=======
+                                                        <td>Dec 23, 2017 01:40:14 AM</td>
+                                                        <td class='linked' test-id='13'>Verify personal information.verify the data on person table.verify the data on person table.And DOB table must have the date in "dd-MM-yyyy" format</td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<2[3-05-0018]> but was:<2[000-12-12 00:00:00]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.ct.stepDefinitions.CTL128_personalInfoDataBaseVirification.dob_table_must_have_the_date_in_format(CTL128_personalInfoDataBaseVirification.java:122)
+	at ✽.And DOB table must have the date in "dd-MM-yyyy" format(CTL-128_personalInfo_database_verification.feature:13)
+</textarea></pre></td>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -823,25 +924,37 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>47</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
+<<<<<<< HEAD
 					<div class='panel-lead'>Dec 23, 2017 03:32:42 PM</div>
+=======
+					<div class='panel-lead'>Dec 23, 2017 01:40:06 AM</div>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
+<<<<<<< HEAD
 			 		<div class='panel-lead'>Dec 23, 2017 03:33:06 PM</div>
+=======
+			 		<div class='panel-lead'>Dec 23, 2017 01:40:18 AM</div>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
+<<<<<<< HEAD
 					<div class='panel-lead'>24,088ms</div>
+=======
+					<div class='panel-lead'>12,373ms</div>
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				</div>
 			</div>
 			<div class='col s4'>
@@ -876,7 +989,7 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@Test117</td>
+							<td>@Test128</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -920,7 +1033,11 @@ Session ID: 4b463a3c7ae9ae31635ba2530786c9ce
 				infoChild: 0,
 				exceptionsChild: 1,
 				
+<<<<<<< HEAD
 				passGrandChild: 46,
+=======
+				passGrandChild: 9,
+>>>>>>> branch 'CTL' of https://github.com/cbttestuser1/ct-loan.git
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
